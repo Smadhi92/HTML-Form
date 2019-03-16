@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Form</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <h1 id="Header1">My first <span>HTML</span> Form</h1>
@@ -37,8 +39,8 @@
     </label> <br> <br>
 
 <label for="Gender" id="Gen"> Gender:
-    <input type="radio" type="gender" name="Male"> Male
-    <input type="radio" type="gender" name="Female"> Female
+    <input type="radio" type="gender" name="gender"> Male
+    <input type="radio" type="gender" name="gender"> Female
 </label>
 <label for="Track" id="Track"> Track:
         <select name="Domaine">
@@ -53,12 +55,11 @@
 </label> <br><br>
 <textarea name="txt" rows="10" cols="50" id="txt" placeholder="Write your message here!"></textarea> <br><br>
 <label for="submit">
-        <button id="subm"> Submit </button>
+        <button id="subm" onclick="show_alert()"> Submit </button>
     </label>
     </form>
 </div>
         </div>
     </div>
-</div>
 </body>
 </html>
